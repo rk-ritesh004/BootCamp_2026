@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<stdio.h>
 int main(){
     int r,c;
@@ -17,3 +18,24 @@ int main(){
     }
 
 }
+=======
+#include<stdio.h>
+int main(){
+    int r,c;
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("Rotated 2D Array:\n");
+    for(int i=0;i<r;i++){
+        for(int j=c-1;j>=0;j--){
+            printf("%d ",arr[j][i]);
+        }
+        printf("\n");
+    }
+
+}
+>>>>>>> 73d76c9 (Initial commit: Add all C programs)
