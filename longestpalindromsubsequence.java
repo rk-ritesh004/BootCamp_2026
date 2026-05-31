@@ -13,7 +13,6 @@ public class longestpalindromsubsequence {
     static String longestPalindrome(String str){
         int max=0,start=0,end=0;
         int n=str.length();
-        String longest="";
         for(int i=0;i<n;i++){
             for(int j=i;j<n;j++){
                 if(isPalindrome(str,i,j)){
